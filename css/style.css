@@ -107,12 +107,10 @@ p.content:first-letter {
 	padding-right: 5px;
 }
 .bd-header {
-	padding:10px;
+	padding: 10px;
 	border-radius: 0px;
 	background: #FFFFFF;
 }
-
-
 .bd-article {
 	font-size: 13px;
 	line-height: 26px;
@@ -235,7 +233,6 @@ input, textarea, .bd-article-btn {
 	background: #FFFFFF;
 	padding-top: 20px;
 }
-
 ul.navbar-nav li a {
 	font-size: 14px;
 	font-weight: bold;
@@ -346,20 +343,85 @@ ul.navbar-nav li a {
 	margin: 8px 0px;
 }
 .bd-search-text {
-	
-	 display: block;
-    width: 100%;
-    height: 36px;
-    padding: 8px 13px;
-    font-size: 13px;
-    line-height: 1.5;
-    color: #667c99;
-    background-color: #e8ecf3;
-    border: 2px solid transparent;
-    border-radius: 4px;
+	display: block;
+	width: 100%;
+	height: 36px;
+	padding: 8px 13px;
+	font-size: 13px;
+	line-height: 1.5;
+	color: #667c99;
+	background-color: #e8ecf3;
+	border: 2px solid transparent;
+	border-radius: 4px;
 }
-/*ul.navbar-nav li a {
+.bd-box-moder {
+	background: #FFF;
+}
+.bd-box-moder h3 {
+	height: 50px;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 22px 20px 0;
+	margin: 0;
+}
+.bd-span-mark {
+	display: inline-block;
+	/*	background-color: #f63756;*/
+	background-color: #252525;
+	position: absolute;
+	z-index: 1;
+	height: 20px;
+	line-height: 20px;
+	margin: -28px 0 0;
+	width: 4px;
+}
+.bd-span-clear {
+	clear: both;
+}
+.bd-list-box ul li {
+	list-style: none;
+	margin: 10px 0 0 0;
+	padding: 0 20px 10px;
+	border-bottom: 1px #f1f1f1 solid;
+}
+.bd-list-box ul {
+	padding-left: 0px;
+	margin-bottom: 0px;
+	line-height:23px;
+}
+.bd-list-box ul li a {
+	color:#464445;
+	margin: 3px;
+	padding: 0px;
+	font-size: 12px;
+}
+
+.bd-tags-list {
+	padding: 0px;
+}
+.bd-tags-list li {
+	list-style: none;
+	float: left;
+	margin: 10px 0px 10px 15px;
+}
+.bd-tags-list li a {
+	padding: 4px 6px;
+	color: #FFFFFF;
+}
+.bd-w-type ul {
+	margin: 0px;
+	padding: 0px;
+}
+.bd-w-type ul li {
+	list-style: none;
+	float: left;
+	width: 50%;
+	text-align:center;
+	padding:10px;
+	border:1px solid #f1f1f1;
+}
+.bd-w-type ul li a{
+	text-align:center;
+	color:#000000;
 	
-	font-weight:normal;
-	}
-*/
+}

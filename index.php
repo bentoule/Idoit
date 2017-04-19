@@ -14,11 +14,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 <div class="container">
   <div class="row">
-  <!--  <div class="col-md-1 col-sm-1">
-    
-  
-    </div>-->
-    <div class="col-md-12 col-sm-12 col-xs-12 bd-padding-none">
+    <div class="col-md-4  hidden-sm hidden-xs">
+      <?php $this->need('sidebar.php'); ?>
+    </div>
+    <div class="col-md-8 col-sm-12 col-xs-12 bd-padding-none">
       <?php while($this->next()): ?>
       <div class="bd-w-box">
         <div class="bd-w-header">
@@ -44,11 +43,11 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
           <p class="content">
             <?php $this->excerpt(150, '...'); ?>
           </p>
-        <!--  <div class="btn-group btn-group-sm pull-right" role="group" aria-label="...">
+          <!--  <div class="btn-group btn-group-sm pull-right" role="group" aria-label="...">
             <button type="button" class="btn btn-default">回复</button>
             <button type="button" class="btn btn-default">分享</button>
             <button type="button" class="btn btn-default">收藏</button>
-          </div>-->
+          </div>--> 
         </div>
       </div>
       <?php endwhile; ?>
@@ -59,11 +58,11 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
         <?php $this->pageNav('←','→','3','...'); ?>
       </nav>
       <div style="clear:both ;"></div>
-      
     </div>
-   <!-- <div class="col-md-1 col-sm-1"> 
-      
-    </div>-->
+    <!--    <div class="col-md-4  hidden-sm hidden-xs">
+     
+    </div>--> 
   </div>
 </div>
+<div class="bd-span-clear"></div>
 <?php $this->need('footer.php'); ?>

@@ -5,7 +5,10 @@
 <div class="container">
   <div class="row">
    <!-- <div class="col-md-2 col-sm-1" > </div>-->
-    <div class="col-md-12 col-sm-12 col-xs-12 bd-padding-none">
+    <div class="col-md-4  hidden-sm hidden-xs">
+      <?php $this->need('sidebar.php'); ?>
+    </div>
+    <div class="col-md-8 col-sm-12 col-xs-12 bd-padding-none">
       <div style="background:#ffffff; padding:10px; 15px;">
         <h3 class="bd-w-title"> <a href="<?php $this->permalink() ?>" target="_blank">
           <?php $this->title() ?>
@@ -67,6 +70,8 @@
       </div>
       <?php $this->need('comments.php'); ?>
     </div>
+    
+    
 <!--    <div class="col-md-2 col-sm-1"> </div>-->
   </div>
 </div>
