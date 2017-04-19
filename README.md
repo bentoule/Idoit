@@ -2,7 +2,7 @@
 
 主题预览
 
-https://3gjn.com
+http://www.3gjn.com
 
 **主题展示**
 <img src="http://notend.b0.upaiyun.com/usr/uploads/2017/04/358748876.jpg"/>
@@ -12,3 +12,7 @@ https://3gjn.com
 
 idoit 1.0 版本发布；
 已完善，评论，文章，页面等功能
+
+idoit 1.01 版本发布；
+2017-04-19
+新增侧栏。设置站点icon图标
