@@ -109,7 +109,8 @@ p.content:first-letter {
 .bd-header {
 	padding: 10px;
 	border-radius: 0px;
-	background: #FFFFFF;
+	/*background: #FFFFFF;*/
+	background: rgba(255,255,255,0.7);
 }
 .bd-article {
 	font-size: 13px;
@@ -387,15 +388,14 @@ ul.navbar-nav li a {
 .bd-list-box ul {
 	padding-left: 0px;
 	margin-bottom: 0px;
-	line-height:23px;
+	line-height: 23px;
 }
 .bd-list-box ul li a {
-	color:#464445;
+	color: #464445;
 	margin: 3px;
 	padding: 0px;
 	font-size: 12px;
 }
-
 .bd-tags-list {
 	padding: 0px;
 }
@@ -416,12 +416,35 @@ ul.navbar-nav li a {
 	list-style: none;
 	float: left;
 	width: 50%;
-	text-align:center;
-	padding:10px;
-	border:1px solid #f1f1f1;
+	text-align: center;
+	padding: 10px;
+	border: 1px solid #f1f1f1;
 }
-.bd-w-type ul li a{
-	text-align:center;
-	color:#000000;
+.bd-w-type ul li a {
+	text-align: center;
+	color: #000000;
+}
+.bd-authr-img {
+	padding: 20px;
+}
+.bd-authr-img img {
+	border-radius: 98px;
+}
+.bd-authr-name a{
+	font-size: 16px;
+	color:black;
+}
+
+.bd-red{
 	
+	color:red;
+}
+.bd-author-describe{
+	font-size: 13px;
+	line-height: 20px;
+	margin:9px 20px;
+	color:darkgray;
+}
+.bd-count-article{
+	padding-bottom: 20px;
 }

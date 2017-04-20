@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="bd-span-clear"></div>
- 
+
       <?php endif; ?>
       
      <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)): ?>
@@ -47,7 +47,7 @@
    
       
      <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentComments', $this->options->sidebarBlock)): ?>
-      <div class="bd-box-moder" id="flgd">
+      <div class="bd-box-moder"  id="flgd">
         <h3>热门评论 <span class="glyphicon glyphicon-fire" > </span></h3>
         <div class="bd-span-mark"></div>
         <div class="bd-span-clear"></div>
@@ -82,7 +82,7 @@
       <?php endif; ?>
  
    
-   <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentComments', $this->options->sidebarBlock)): ?>    
+ <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentComments', $this->options->sidebarBlock)): ?>     
  <script type="text/javascript">  
  //超出部分滚动   
  function isdh(ee)
@@ -104,5 +104,4 @@ $(function(){
 	 isdh("#flgd");   //div1为你需要该效果的div
 	})
  </script>
- 
- <?php endif; ?>
+   <?php endif; ?>

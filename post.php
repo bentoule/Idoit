@@ -6,6 +6,25 @@
   <div class="row">
    <!-- <div class="col-md-2 col-sm-1" > </div>-->
     <div class="col-md-4  hidden-sm hidden-xs">
+      <?php if (!empty($this->options->sidebarBlock) && in_array('ShowUserTab', $this->options->sidebarBlock)): ?>
+       <div class="bd-box-moder text-center">
+          <div class="bd-authr-img ">
+           <?php $this->author->gravatar(98); ?>
+           </div>
+           <div class="bd-authr-name">
+           	<a href="<?php $this->author->permalink(); ?>">
+               <?php $this->author(); ?>
+            </a><span class="glyphicon glyphicon-ok-circle bd-red"></span>
+           </div>
+           <div class="bd-author-describe">
+           <?php $this->options->description(); ?></div>
+           <div class="bd-count-article">	<a href="<?php $this->author->permalink(); ?>"><?php Typecho_Widget::widget('Widget_Stat')->to($stat); ?>
+              <?php $stat->publishedPostsNum() ?>篇文章</a>
+            </div>  
+       </div>
+     <?php endif; ?>
+     
+     
       <?php $this->need('sidebar.php'); ?>
     </div>
     <div class="col-md-8 col-sm-12 col-xs-12 bd-padding-none">

@@ -4,8 +4,8 @@
  * 
  * @package Idoit
  * @author Mr.Pig
- * @version 1.0
- * @link http://3gjn.com
+ * @version 1.02
+ * @link http://www.3gjn.com
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;

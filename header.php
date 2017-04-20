@@ -30,6 +30,15 @@
     <script src="//cdn.staticfile.org/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
+<?php if($this->options->bgimgUrl): ?>
+    <style type="text/css">
+	  .bd-container{
+		   background: url(<?php $this->options->bgimgUrl(); ?>);
+		   background-size:100%;
+		  }
+	</style>
+<?php endif;?>
+
 <!-- 通过自有函数输出HTML头部信息 -->
 <?php $this->header(); ?>
 </head>

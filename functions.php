@@ -8,15 +8,19 @@ function themeConfig($form) {
 	 $favicon = new Typecho_Widget_Helper_Form_Element_Text('favicon', NULL, NULL, _t('favicon地址'), _t('一般为http://www.xxxx.com/icon.png,支持 https:// 或 //,留空则不设置favicon'));
      $form->addInput($favicon->addRule('xssCheck', _t('请不要在图片链接中使用特殊字符')));
 	 
+	$bgimgUrl = new Typecho_Widget_Helper_Form_Element_Text('bgimgUrl', NULL, NULL, _t('背景图片地址'), _t('在这里填入一个图片URL地址, 作为网站背景图'));
+    $form->addInput($bgimgUrl);
+	 
 	 
 	$sidebarBlock = new Typecho_Widget_Helper_Form_Element_Checkbox('sidebarBlock', 
     array('ShowRecentPosts' => _t('显示最新文章'),
     'ShowRecentComments' => _t('显示最近回复'),
 	 'ShowRandomPosts' => _t('显示随机文章'),
     'ShowCategory' => _t('显示分类'),
-	'ShowTabs' => _t('显示标签')
+	'ShowTabs' => _t('显示标签'),
+	'ShowUserTab' => _t('显示文章页用户卡片')
 	),
-    array('ShowRecentPosts', 'ShowRecentComments', 'ShowRandomPosts', 'ShowCategory','ShowTabs'), _t('侧边栏显示'));
+    array('ShowRecentPosts', 'ShowRecentComments', 'ShowRandomPosts', 'ShowCategory','ShowTabs','ShowUserTab'), _t('侧边栏显示'));
     
     $form->addInput($sidebarBlock->multiMode());
     
