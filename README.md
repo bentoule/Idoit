@@ -30,4 +30,10 @@ Idoit 1.03
 新增归档页模示http://www.3gjn.com/Archives.html
 <br>
 新增404页面 演示 http://www.3gjn.com/404
+<br>
+
+<br>
+Idoit 1.05
+</br>
+评论增强，新增作者和用户标签，优化一些细节
 
