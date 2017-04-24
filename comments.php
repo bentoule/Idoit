@@ -1,12 +1,13 @@
 <?php function threadedComments($comments, $options) {
     $commentClass = '';
-    if ($comments->authorId) {
+  // if ($comments->authorId) {
         if ($comments->authorId == $comments->ownerId) {
             $commentClass .= ' comment-by-author';
         } else {
             $commentClass .= ' comment-by-user';
         }
-    }
+ //  }
+
  
     $commentLevelClass = $comments->levels > 0 ? ' comment-child' : ' comment-parent';
 ?>
@@ -18,13 +19,12 @@ if ($comments->levels > 0) {
     echo ' comment-parent';
 }
 $comments->alt(' comment-odd', ' comment-even');
-echo $commentClass;
 ?>">
   
   <div class="media  bd-media">
     <div class="media-left"><a href="#"><?php $comments->gravatar('40', ''); ?></a></div>
     <div class="media-body">
-      <h4 class="media-heading"> <?php $comments->author(); ?></h4>
+      <h4 class="media-heading <?php echo $commentClass; ?>"> <?php $comments->author(); ?></h4>
       <div class="media-body " >
       <span class="w-author-at"><?php getCommentAt($comments->coid); ?></span><?php $comments->content(); ?>
       </div>
@@ -47,9 +47,7 @@ echo $commentClass;
  <div class="bd-inline" style="margin-top:20px;">
     <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
 	<?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?>
-  </div>
-  
-   
+  </div> 
       
   <?php $comments->listComments(); ?>
       <nav class="bd-PageNav text-center">
@@ -112,11 +110,14 @@ echo $commentClass;
 
 <script type="text/javascript">
 $(window).load(function(){
+	//无分页时去掉分页CSS
 	if ($( ".bd-PageNav:has(ol)" ).length==0)          
        {    
          $(".bd-PageNav").css("display","none")
-       }   
-	})
+       }
 
-
+    //渲染作者与用户
+	$(".comment-by-author").append('<span class="bd-by-author"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>小编</span>')
+	$(".comment-by-user").append('<span class="bd-by-user"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>看倌</span')
+	})	
 </script>

@@ -4,7 +4,7 @@
  * 
  * @package Idoit
  * @author Mr.Pig
- * @version 1.02
+ * @version 1.05
  * @link http://www.3gjn.com
  */
 

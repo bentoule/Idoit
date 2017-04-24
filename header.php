@@ -91,7 +91,7 @@
           <!-- 若当前用户未登录 -->
           <?php else: ?>
           <a class="current" href="<?php $this->options->adminUrl('login.php'); ?>">
-            <?php _e('登录'); ?>
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
           </a>
           <?php endif; ?>
         </li>
