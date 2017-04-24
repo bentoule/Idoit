@@ -23,9 +23,11 @@ idoit 1.01   <br>版本发布:新增侧栏。设置站点icon图标
 Idot 1.02   <br> 新增自定义背景图片，文章页新增用户卡片
 <br>
 <br>
-<b>2017-04-20</b>
-
-新增归档页模板 演示 http://www.3gjn.com/Archives.html
+< b > 2017-04-20 </ b >
+<br>
+Idoit 1.03
+</br>
+新增归档页模示http://www.3gjn.com/Archives.html
 <br>
 新增404页面 演示 http://www.3gjn.com/404
 
