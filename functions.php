@@ -38,7 +38,7 @@ function getCommentAt($coid){
             ->from('table.comments')
             ->where('coid = ? AND status = ?', $parent, 'approved'));
         $author = $arow['author'];
-        $href   = '<a href="#comment-'.$parent.'">@'.$author.'</a>';
+        $href   = '<a href="#li-comment-'.$parent.'">@'.$author.'</a>';
         echo $href;
     } else {
         echo '';

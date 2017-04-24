@@ -425,7 +425,7 @@ ul.navbar-nav li a {
 	color: #000000;
 }
 .bd-authr-img {
-	padding: 20px;
+	padding: 35px 20px 20px 20px;
 }
 .bd-authr-img img {
 	border-radius: 98px;
@@ -446,5 +446,5 @@ ul.navbar-nav li a {
 	color:darkgray;
 }
 .bd-count-article{
-	padding-bottom: 20px;
+	padding-bottom: 35px;
 }

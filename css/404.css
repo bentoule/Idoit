@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {background:none;background-color:#f0eeee;}
+body {padding:0;}
+#header { width:952px;margin:0 auto; height:120px;background:none;box-shadow:none;position:static;}
+#content { font-family:"微软雅黑"; background:url("../images/404.png") no-repeat 122px 0px;width:952px;margin:0 auto; font-size:18px;color:#999;}
+#content p {padding:180px 0 0 426px; line-height:38px;}
+#content p a.backhome {font-size:14px;}
+#content p a.backhome span {width:80px;}

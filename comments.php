@@ -10,7 +10,6 @@
  
     $commentLevelClass = $comments->levels > 0 ? ' comment-child' : ' comment-parent';
 ?>
-
 <div id="li-<?php $comments->theId(); ?>" class="bd-w-box <?php 
 if ($comments->levels > 0) {
     echo ' comment-child';
@@ -61,6 +60,7 @@ echo $commentClass;
   <div class="cancel-comment-reply">
     <?php $comments->cancelReply(); ?>
   </div>
+  
   <div class="bd-inline" style="margin-top:20px;">
    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
     <?php _e('添加新评论'); ?>
@@ -102,6 +102,7 @@ echo $commentClass;
     </div>
   </form>
 </div>
+
 <?php else: ?>
 <h3>
   <?php _e('评论已关闭'); ?>
@@ -110,10 +111,12 @@ echo $commentClass;
 </div>
 
 <script type="text/javascript">
-$(function(){
+$(window).load(function(){
 	if ($( ".bd-PageNav:has(ol)" ).length==0)          
-      {    
+       {    
          $(".bd-PageNav").css("display","none")
-       } 
+       }   
 	})
+
+
 </script>

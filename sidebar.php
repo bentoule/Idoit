@@ -100,7 +100,8 @@
  
 }
  
-$(function(){
+$(window).load(function(){
+
 	 isdh("#flgd");   //div1为你需要该效果的div
 	})
  </script>
