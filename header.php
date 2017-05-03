@@ -39,6 +39,12 @@
 	</style>
 <?php endif;?>
 
+<!-- 是否加载代码亮高效果 -->
+<?php if ($this->options->CodeRadio == 'open'): ?>
+<link rel="stylesheet" href="<?php $this->options->themeUrl('css/prism.css'); ?>">
+<script src="<?php $this->options->themeUrl('js/prism.js'); ?>"></script>
+<?php endif; ?>
+
 <!-- 通过自有函数输出HTML头部信息 -->
 <?php $this->header(); ?>
 </head>
@@ -51,6 +57,8 @@
 <div class="bd-container">
 <nav class="navbar navbar-default bd-header">
   <div class="container"> 
+     
+    <div class="col-md-12 col-sm-12 col-xs-12 bd-padding-none">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -98,6 +106,8 @@
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
+</div>
+
   </div>
   <!-- /.container-fluid --> 
 </nav>

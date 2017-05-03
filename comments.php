@@ -11,7 +11,7 @@
  
     $commentLevelClass = $comments->levels > 0 ? ' comment-child' : ' comment-parent';
 ?>
-<div id="li-<?php $comments->theId(); ?>" class="bd-w-box <?php 
+<div id="<?php $comments->theId(); ?>" class="bd-w-box <?php 
 if ($comments->levels > 0) {
     echo ' comment-child';
     $comments->levelsAlt(' comment-level-odd', ' comment-level-even');
@@ -41,10 +41,10 @@ $comments->alt(' comment-odd', ' comment-even');
 </div>
 <?php } ?>
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<div id="comments">
+<div id="comments1">
   <?php $this->comments()->to($comments); ?>
   <?php if ($comments->have()): ?>
- <div class="bd-inline" style="margin-top:20px;">
+ <div class="bd-inline">
     <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
 	<?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?>
   </div> 
@@ -59,11 +59,11 @@ $comments->alt(' comment-odd', ' comment-even');
     <?php $comments->cancelReply(); ?>
   </div>
   
-  <div class="bd-inline" style="margin-top:20px;">
+  <div class="bd-inline">
    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
     <?php _e('添加新评论'); ?>
   </div>
-  <form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">
+  <form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form" class="bd-margin-bottom-20">
     <?php if($this->user->hasLogin()): ?>
     <div class="author-oklogin">
       <?php _e('登录身份: '); ?>
@@ -116,8 +116,10 @@ $(window).load(function(){
          $(".bd-PageNav").css("display","none")
        }
 
+	})
+$(function(){	
     //渲染作者与用户
-	$(".comment-by-author").append('<span class="bd-by-author"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>小编</span>')
-	$(".comment-by-user").append('<span class="bd-by-user"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>看倌</span')
-	})	
+	$(".comment-by-author").append('<span class="bd-by-author"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>小编</span>');
+	$(".comment-by-user").append('<span class="bd-by-user"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>看倌</span');
+  })	
 </script>

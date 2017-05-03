@@ -13,7 +13,6 @@ body {
 }
 .bd-w-box {
 	background: #fff;
-	margin-bottom: 15px;
 	padding: 0;
 	-moz-transform: translateZ(0);
 	-webkit-transform: translateZ(0);
@@ -468,4 +467,29 @@ ul.navbar-nav li a {
 	background:#9C9191;
 	color:#fff;
 	text-align:center;
+}
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
+.carousel-caption h1
+{
+	font-size: 30px;
+}
+
+.carousel-caption h1 a
+{
+	color:#fff;
+}
+.comment-parent {
+margin-bottom: 20px;
+	
+}
+.bd-margin-bottom-20
+{
+  margin-bottom: 20px;
+
 }

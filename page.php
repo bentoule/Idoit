@@ -1,12 +1,11 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
 
-<br>
 <div class="container">
     <div class="row">
      <!-- <div class="col-md-2 col-sm-1" > </div>-->
       <div class="col-md-12 col-sm-12 col-xs-12 bd-padding-none">
-        <div class="bd-w-box">
+        <div class="bd-w-box  bd-margin-bottom-20">
           <div class="bd-w-header">
             <h3 class="bd-w-title"> <a href="<?php $this->permalink() ?>" target="_blank"> <?php $this->title() ?></a> </h3>
           </div>
@@ -18,6 +17,7 @@
         </div>
          <?php $this->need('comments.php'); ?>
       </div>
+
      <!-- <div class="col-md-2 col-sm-1"> </div>-->
     </div>
   </div>

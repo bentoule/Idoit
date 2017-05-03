@@ -12,6 +12,7 @@ $this->need('header.php');
 
 <div class="container">
   <div class="row">
+
     <div class="col-md-12 col-sm-12 col-xs-12 bd-padding-none">
    
 	<?php
@@ -40,6 +41,7 @@ $this->need('header.php');
 
 </div>
 </div>
+
 </div>
 
 <?php $this->need('footer.php'); ?>

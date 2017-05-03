@@ -1,10 +1,11 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
 
-<br>
+
 <div class="container">
   <div class="row">
    <!-- <div class="col-md-2 col-sm-1" > </div>-->
+   
     <div class="col-md-4  hidden-sm hidden-xs">
       <?php if (!empty($this->options->sidebarBlock) && in_array('ShowUserTab', $this->options->sidebarBlock)): ?>
        <div class="bd-box-moder text-center">
@@ -49,10 +50,7 @@
           <?php $this->excerpt(150, '...'); ?>
         </p>
       </section>
-      <div class="bd-w-box" style="margin-bottom: 0px;"> 
-        <!-- <div class="bd-w-header">
-            <h3 class="bd-w-title"> <a href="<?php $this->permalink() ?>" target="_blank"> <?php $this->title() ?> </a> </h3>
-          </div>-->
+      <div class="bd-w-box"> 
         <div class="bd-w-content  clearfix">
           <div style="clear:both"></div>
           <div class="bd-article">
@@ -67,7 +65,7 @@
           </div>
         </div>
       </div>
-      <div class="media bd-article-bq" style="margin-top:0px;">
+      <div class="media bd-article-bq" style="margin-top:20px;margin-bottom:20px">
         <div class="media-left bd-author-imglf"> <a href="<?php $this->author->permalink(); ?>">
           <?php $this->author->gravatar(); ?>
           </a> </div>
@@ -81,8 +79,7 @@
       </div>
       <?php $this->need('comments.php'); ?>
     </div>
-    
-    
+     
 <!--    <div class="col-md-2 col-sm-1"> </div>-->
   </div>
 </div>
